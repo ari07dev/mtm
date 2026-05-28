@@ -1,0 +1,94 @@
+{
+  "summary": {
+    "total_windows": 0,
+    "total_actions": 8,
+    "unique_codes": [
+      "WALK 1-4 STEPS",
+      "GRASP + HOLD OBJECT"
+    ],
+    "duration_seconds": 7.92
+  },
+  "actions": [
+    {
+      "person_id": 0,
+      "window_id": 0,
+      "time_start": 0.6,
+      "time_end": 2.36,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "rules",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 1,
+      "time_start": 1.4,
+      "time_end": 3.16,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "rules",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 2,
+      "time_start": 2.2,
+      "time_end": 3.96,
+      "mtm_code": "WALK 1-4 STEPS",
+      "raw_action": "rules",
+      "confidence": 0.8,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 3,
+      "time_start": 3.0,
+      "time_end": 4.76,
+      "mtm_code": "WALK 1-4 STEPS",
+      "raw_action": "rules",
+      "confidence": 0.8,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 4,
+      "time_start": 3.8,
+      "time_end": 5.56,
+      "mtm_code": "WALK 1-4 STEPS",
+      "raw_action": "rules",
+      "confidence": 0.8,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 5,
+      "time_start": 4.6,
+      "time_end": 6.36,
+      "mtm_code": "WALK 1-4 STEPS",
+      "raw_action": "rules",
+      "confidence": 0.8,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 6,
+      "time_start": 5.4,
+      "time_end": 7.16,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "rules",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 7,
+      "time_start": 6.16,
+      "time_end": 7.92,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "rules",
+      "confidence": 0.72,
+      "step_count": 0
+    }
+  ],
+  "skeleton_windows": []
+}

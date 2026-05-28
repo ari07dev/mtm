@@ -1,0 +1,4 @@
+person_id,window_id,time_start,time_end,mtm_code,raw_action,confidence,step_count
+0,0,0.6,3.16,GRASP + HOLD OBJECT,grasp_hold,0.72,0
+0,2,2.2,6.36,WALK 1-4 STEPS,walk_1_4,0.8,12
+0,6,5.4,7.92,GRASP + HOLD OBJECT,grasp_hold,0.72,0

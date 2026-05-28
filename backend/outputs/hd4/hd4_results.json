@@ -1,0 +1,438 @@
+{
+  "summary": {
+    "total_windows": 23,
+    "total_actions": 1,
+    "unique_codes": [
+      "GRASP + HOLD OBJECT"
+    ],
+    "duration_seconds": 11.644966666666667
+  },
+  "actions": [
+    {
+      "person_id": 0,
+      "window_id": 0,
+      "time_start": 0.0,
+      "time_end": 11.645,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    }
+  ],
+  "skeleton_windows": [
+    {
+      "person_id": 0,
+      "window_id": 0,
+      "frames": [
+        0,
+        58
+      ],
+      "time": [
+        0.0,
+        0.968
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 1,
+      "frames": [
+        30,
+        88
+      ],
+      "time": [
+        0.501,
+        1.468
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 2,
+      "frames": [
+        60,
+        118
+      ],
+      "time": [
+        1.001,
+        1.969
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.9
+    },
+    {
+      "person_id": 0,
+      "window_id": 3,
+      "frames": [
+        90,
+        148
+      ],
+      "time": [
+        1.502,
+        2.469
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.533
+    },
+    {
+      "person_id": 0,
+      "window_id": 4,
+      "frames": [
+        120,
+        178
+      ],
+      "time": [
+        2.002,
+        2.97
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.3
+    },
+    {
+      "person_id": 0,
+      "window_id": 5,
+      "frames": [
+        150,
+        208
+      ],
+      "time": [
+        2.502,
+        3.47
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.533
+    },
+    {
+      "person_id": 0,
+      "window_id": 6,
+      "frames": [
+        180,
+        238
+      ],
+      "time": [
+        3.003,
+        3.971
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.367
+    },
+    {
+      "person_id": 0,
+      "window_id": 7,
+      "frames": [
+        210,
+        268
+      ],
+      "time": [
+        3.504,
+        4.471
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.067
+    },
+    {
+      "person_id": 0,
+      "window_id": 8,
+      "frames": [
+        240,
+        298
+      ],
+      "time": [
+        4.004,
+        4.972
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.067
+    },
+    {
+      "person_id": 0,
+      "window_id": 9,
+      "frames": [
+        270,
+        328
+      ],
+      "time": [
+        4.505,
+        5.472
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 10,
+      "frames": [
+        300,
+        358
+      ],
+      "time": [
+        5.005,
+        5.973
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.133
+    },
+    {
+      "person_id": 0,
+      "window_id": 11,
+      "frames": [
+        330,
+        388
+      ],
+      "time": [
+        5.506,
+        6.473
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.5
+    },
+    {
+      "person_id": 0,
+      "window_id": 12,
+      "frames": [
+        360,
+        418
+      ],
+      "time": [
+        6.006,
+        6.974
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.4
+    },
+    {
+      "person_id": 0,
+      "window_id": 13,
+      "frames": [
+        390,
+        448
+      ],
+      "time": [
+        6.506,
+        7.474
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.033
+    },
+    {
+      "person_id": 0,
+      "window_id": 14,
+      "frames": [
+        420,
+        478
+      ],
+      "time": [
+        7.007,
+        7.975
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.233
+    },
+    {
+      "person_id": 0,
+      "window_id": 15,
+      "frames": [
+        450,
+        508
+      ],
+      "time": [
+        7.508,
+        8.475
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.667
+    },
+    {
+      "person_id": 0,
+      "window_id": 16,
+      "frames": [
+        480,
+        538
+      ],
+      "time": [
+        8.008,
+        8.976
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.633
+    },
+    {
+      "person_id": 0,
+      "window_id": 17,
+      "frames": [
+        510,
+        568
+      ],
+      "time": [
+        8.508,
+        9.476
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.6
+    },
+    {
+      "person_id": 0,
+      "window_id": 18,
+      "frames": [
+        540,
+        598
+      ],
+      "time": [
+        9.009,
+        9.977
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.9
+    },
+    {
+      "person_id": 0,
+      "window_id": 19,
+      "frames": [
+        570,
+        628
+      ],
+      "time": [
+        9.51,
+        10.477
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 20,
+      "frames": [
+        600,
+        658
+      ],
+      "time": [
+        10.01,
+        10.978
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.967
+    },
+    {
+      "person_id": 0,
+      "window_id": 21,
+      "frames": [
+        630,
+        688
+      ],
+      "time": [
+        10.511,
+        11.478
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.967
+    },
+    {
+      "person_id": 0,
+      "window_id": 22,
+      "frames": [
+        640,
+        698
+      ],
+      "time": [
+        10.677,
+        11.645
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.967
+    }
+  ]
+}

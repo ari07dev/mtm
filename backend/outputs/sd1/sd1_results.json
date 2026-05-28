@@ -1,0 +1,274 @@
+{
+  "summary": {
+    "total_windows": 11,
+    "total_actions": 6,
+    "unique_codes": [
+      "WALK 1-4 STEPS",
+      "WALK 5-7 STEPS",
+      "WALK 8-10 STEPS"
+    ],
+    "duration_seconds": 15.133333333333333
+  },
+  "actions": [
+    {
+      "person_id": 0,
+      "window_id": 0,
+      "time_start": 0.267,
+      "time_end": 2.633,
+      "mtm_code": "WALK 1-4 STEPS",
+      "raw_action": "walk_1_4",
+      "confidence": 0.8,
+      "step_count": 4
+    },
+    {
+      "person_id": 0,
+      "window_id": 1,
+      "time_start": 0.933,
+      "time_end": 3.3,
+      "mtm_code": "WALK 5-7 STEPS",
+      "raw_action": "walk_5_7",
+      "confidence": 0.8,
+      "step_count": 6
+    },
+    {
+      "person_id": 0,
+      "window_id": 2,
+      "time_start": 2.767,
+      "time_end": 6.633,
+      "mtm_code": "WALK 8-10 STEPS",
+      "raw_action": "walk_8_10",
+      "confidence": 0.8,
+      "step_count": 24
+    },
+    {
+      "person_id": 0,
+      "window_id": 5,
+      "time_start": 5.567,
+      "time_end": 10.633,
+      "mtm_code": "WALK 5-7 STEPS",
+      "raw_action": "walk_5_7",
+      "confidence": 0.8,
+      "step_count": 18
+    },
+    {
+      "person_id": 0,
+      "window_id": 8,
+      "time_start": 9.767,
+      "time_end": 11.967,
+      "mtm_code": "WALK 8-10 STEPS",
+      "raw_action": "walk_8_10",
+      "confidence": 0.8,
+      "step_count": 8
+    },
+    {
+      "person_id": 0,
+      "window_id": 9,
+      "time_start": 10.767,
+      "time_end": 15.133,
+      "mtm_code": "WALK 5-7 STEPS",
+      "raw_action": "walk_5_7",
+      "confidence": 0.8,
+      "step_count": 13
+    }
+  ],
+  "skeleton_windows": [
+    {
+      "person_id": 0,
+      "window_id": 0,
+      "frames": [
+        8,
+        79
+      ],
+      "time": [
+        0.267,
+        2.633
+      ],
+      "shape": [
+        45,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 1,
+      "frames": [
+        28,
+        99
+      ],
+      "time": [
+        0.933,
+        3.3
+      ],
+      "shape": [
+        45,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 2,
+      "frames": [
+        83,
+        159
+      ],
+      "time": [
+        2.767,
+        5.3
+      ],
+      "shape": [
+        45,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 3,
+      "frames": [
+        103,
+        179
+      ],
+      "time": [
+        3.433,
+        5.967
+      ],
+      "shape": [
+        45,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 4,
+      "frames": [
+        127,
+        199
+      ],
+      "time": [
+        4.233,
+        6.633
+      ],
+      "shape": [
+        45,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 5,
+      "frames": [
+        167,
+        239
+      ],
+      "time": [
+        5.567,
+        7.967
+      ],
+      "shape": [
+        45,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 6,
+      "frames": [
+        207,
+        279
+      ],
+      "time": [
+        6.9,
+        9.3
+      ],
+      "shape": [
+        45,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 7,
+      "frames": [
+        250,
+        319
+      ],
+      "time": [
+        8.333,
+        10.633
+      ],
+      "shape": [
+        45,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 8,
+      "frames": [
+        293,
+        359
+      ],
+      "time": [
+        9.767,
+        11.967
+      ],
+      "shape": [
+        45,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 9,
+      "frames": [
+        323,
+        399
+      ],
+      "time": [
+        10.767,
+        13.3
+      ],
+      "shape": [
+        45,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 10,
+      "frames": [
+        380,
+        454
+      ],
+      "time": [
+        12.667,
+        15.133
+      ],
+      "shape": [
+        45,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+person_id,window_id,time_start,time_end,mtm_code,raw_action,confidence,step_count
+0,0,0.267,2.633,WALK 1-4 STEPS,rules,0.8,0
+0,1,0.933,3.3,WALK 5-7 STEPS,rules,0.8,0
+0,2,2.767,5.3,WALK 8-10 STEPS,rules,0.8,0
+0,3,3.433,5.967,WALK 8-10 STEPS,rules,0.8,0
+0,4,4.233,6.633,WALK 8-10 STEPS,rules,0.8,0
+0,5,5.567,7.967,WALK 5-7 STEPS,rules,0.8,0
+0,6,6.9,9.3,WALK 5-7 STEPS,rules,0.8,0
+0,7,8.333,10.633,WALK 5-7 STEPS,rules,0.8,0
+0,8,9.767,11.967,WALK 8-10 STEPS,rules,0.8,0
+0,9,10.767,13.3,WALK 5-7 STEPS,rules,0.8,0
+0,10,12.667,15.133,WALK 5-7 STEPS,rules,0.8,0

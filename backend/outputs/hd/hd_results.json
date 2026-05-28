@@ -1,0 +1,1755 @@
+{
+  "summary": {
+    "total_windows": 72,
+    "total_actions": 44,
+    "unique_codes": [
+      "HOLD + PUT OBJECT",
+      "GET + HOLD OBJECT",
+      "IDLE",
+      "WALK 1-4 STEPS",
+      "GRASP + PLACE OBJECT",
+      "GRASP + HOLD OBJECT"
+    ],
+    "duration_seconds": 32.52
+  },
+  "actions": [
+    {
+      "person_id": 0,
+      "window_id": 0,
+      "time_start": 0.0,
+      "time_end": 8.96,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 14,
+      "time_start": 8.4,
+      "time_end": 9.56,
+      "mtm_code": "GET + HOLD OBJECT",
+      "raw_action": "reach_get",
+      "confidence": 0.721,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 15,
+      "time_start": 9.0,
+      "time_end": 10.16,
+      "mtm_code": "HOLD + PUT OBJECT",
+      "raw_action": "hold_put",
+      "confidence": 0.7,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 16,
+      "time_start": 9.6,
+      "time_end": 10.76,
+      "mtm_code": "IDLE",
+      "raw_action": "idle",
+      "confidence": 0.5,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 17,
+      "time_start": 10.2,
+      "time_end": 11.36,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 1,
+      "window_id": 0,
+      "time_start": 10.0,
+      "time_end": 11.36,
+      "mtm_code": "GET + HOLD OBJECT",
+      "raw_action": "reach_get",
+      "confidence": 0.715,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 18,
+      "time_start": 10.8,
+      "time_end": 14.96,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 1,
+      "window_id": 1,
+      "time_start": 11.24,
+      "time_end": 14.96,
+      "mtm_code": "GRASP + PLACE OBJECT",
+      "raw_action": "grasp_place",
+      "confidence": 0.68,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 24,
+      "time_start": 14.4,
+      "time_end": 16.76,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 1,
+      "window_id": 4,
+      "time_start": 15.6,
+      "time_end": 16.76,
+      "mtm_code": "GET + HOLD OBJECT",
+      "raw_action": "reach_get",
+      "confidence": 0.58,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 27,
+      "time_start": 16.2,
+      "time_end": 17.36,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 1,
+      "window_id": 5,
+      "time_start": 16.2,
+      "time_end": 17.36,
+      "mtm_code": "IDLE",
+      "raw_action": "idle",
+      "confidence": 0.5,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 28,
+      "time_start": 16.8,
+      "time_end": 17.96,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 1,
+      "window_id": 6,
+      "time_start": 16.8,
+      "time_end": 17.96,
+      "mtm_code": "GET + HOLD OBJECT",
+      "raw_action": "reach_get",
+      "confidence": 0.58,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 29,
+      "time_start": 17.4,
+      "time_end": 18.56,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 1,
+      "window_id": 7,
+      "time_start": 17.4,
+      "time_end": 18.56,
+      "mtm_code": "IDLE",
+      "raw_action": "idle",
+      "confidence": 0.5,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 30,
+      "time_start": 18.0,
+      "time_end": 19.16,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 1,
+      "window_id": 8,
+      "time_start": 17.84,
+      "time_end": 19.16,
+      "mtm_code": "WALK 1-4 STEPS",
+      "raw_action": "walk_1_4",
+      "confidence": 0.8,
+      "step_count": 2
+    },
+    {
+      "person_id": 0,
+      "window_id": 31,
+      "time_start": 18.6,
+      "time_end": 20.36,
+      "mtm_code": "GRASP + PLACE OBJECT",
+      "raw_action": "grasp_place",
+      "confidence": 0.68,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 33,
+      "time_start": 19.8,
+      "time_end": 20.96,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 34,
+      "time_start": 20.4,
+      "time_end": 22.16,
+      "mtm_code": "HOLD + PUT OBJECT",
+      "raw_action": "hold_put",
+      "confidence": 0.7,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 36,
+      "time_start": 21.6,
+      "time_end": 23.36,
+      "mtm_code": "GRASP + PLACE OBJECT",
+      "raw_action": "grasp_place",
+      "confidence": 0.68,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 38,
+      "time_start": 22.8,
+      "time_end": 23.96,
+      "mtm_code": "IDLE",
+      "raw_action": "idle",
+      "confidence": 0.5,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 39,
+      "time_start": 23.4,
+      "time_end": 24.56,
+      "mtm_code": "GRASP + PLACE OBJECT",
+      "raw_action": "grasp_place",
+      "confidence": 0.68,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 40,
+      "time_start": 24.0,
+      "time_end": 25.76,
+      "mtm_code": "GET + HOLD OBJECT",
+      "raw_action": "reach_get",
+      "confidence": 0.716,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 42,
+      "time_start": 25.2,
+      "time_end": 26.36,
+      "mtm_code": "IDLE",
+      "raw_action": "idle",
+      "confidence": 0.5,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 43,
+      "time_start": 25.8,
+      "time_end": 26.96,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 1,
+      "window_id": 9,
+      "time_start": 19.08,
+      "time_end": 26.96,
+      "mtm_code": "IDLE",
+      "raw_action": "idle",
+      "confidence": 0.5,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 44,
+      "time_start": 26.4,
+      "time_end": 27.56,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 1,
+      "window_id": 10,
+      "time_start": 19.64,
+      "time_end": 27.56,
+      "mtm_code": "WALK 1-4 STEPS",
+      "raw_action": "walk_1_4",
+      "confidence": 0.8,
+      "step_count": 2
+    },
+    {
+      "person_id": 0,
+      "window_id": 45,
+      "time_start": 27.0,
+      "time_end": 28.16,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 1,
+      "window_id": 11,
+      "time_start": 26.96,
+      "time_end": 28.16,
+      "mtm_code": "IDLE",
+      "raw_action": "idle",
+      "confidence": 0.5,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 46,
+      "time_start": 27.6,
+      "time_end": 28.76,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 1,
+      "window_id": 12,
+      "time_start": 27.6,
+      "time_end": 28.76,
+      "mtm_code": "GET + HOLD OBJECT",
+      "raw_action": "reach_get",
+      "confidence": 0.58,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 47,
+      "time_start": 28.2,
+      "time_end": 29.36,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 1,
+      "window_id": 13,
+      "time_start": 28.2,
+      "time_end": 29.36,
+      "mtm_code": "GET + HOLD OBJECT",
+      "raw_action": "reach_get",
+      "confidence": 0.58,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 48,
+      "time_start": 28.8,
+      "time_end": 29.96,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 1,
+      "window_id": 14,
+      "time_start": 28.8,
+      "time_end": 29.96,
+      "mtm_code": "GET + HOLD OBJECT",
+      "raw_action": "reach_get",
+      "confidence": 0.58,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 49,
+      "time_start": 29.4,
+      "time_end": 31.16,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 1,
+      "window_id": 16,
+      "time_start": 29.8,
+      "time_end": 31.16,
+      "mtm_code": "GET + HOLD OBJECT",
+      "raw_action": "reach_get",
+      "confidence": 0.58,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 51,
+      "time_start": 30.6,
+      "time_end": 31.76,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 52,
+      "time_start": 31.2,
+      "time_end": 32.36,
+      "mtm_code": "GRASP + PLACE OBJECT",
+      "raw_action": "grasp_place",
+      "confidence": 0.68,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 53,
+      "time_start": 31.36,
+      "time_end": 32.52,
+      "mtm_code": "GRASP + HOLD OBJECT",
+      "raw_action": "grasp_hold",
+      "confidence": 0.72,
+      "step_count": 0
+    },
+    {
+      "person_id": 1,
+      "window_id": 17,
+      "time_start": 30.0,
+      "time_end": 32.52,
+      "mtm_code": "GET + HOLD OBJECT",
+      "raw_action": "reach_get",
+      "confidence": 0.58,
+      "step_count": 0
+    }
+  ],
+  "skeleton_windows": [
+    {
+      "person_id": 0,
+      "window_id": 0,
+      "frames": [
+        0,
+        29
+      ],
+      "time": [
+        0.0,
+        1.16
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 1,
+      "frames": [
+        15,
+        44
+      ],
+      "time": [
+        0.6,
+        1.76
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 2,
+      "frames": [
+        30,
+        59
+      ],
+      "time": [
+        1.2,
+        2.36
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 3,
+      "frames": [
+        45,
+        74
+      ],
+      "time": [
+        1.8,
+        2.96
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 4,
+      "frames": [
+        60,
+        89
+      ],
+      "time": [
+        2.4,
+        3.56
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 5,
+      "frames": [
+        75,
+        104
+      ],
+      "time": [
+        3.0,
+        4.16
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 6,
+      "frames": [
+        90,
+        119
+      ],
+      "time": [
+        3.6,
+        4.76
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 7,
+      "frames": [
+        105,
+        134
+      ],
+      "time": [
+        4.2,
+        5.36
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 8,
+      "frames": [
+        120,
+        149
+      ],
+      "time": [
+        4.8,
+        5.96
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 9,
+      "frames": [
+        135,
+        164
+      ],
+      "time": [
+        5.4,
+        6.56
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 10,
+      "frames": [
+        150,
+        179
+      ],
+      "time": [
+        6.0,
+        7.16
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 11,
+      "frames": [
+        165,
+        194
+      ],
+      "time": [
+        6.6,
+        7.76
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 12,
+      "frames": [
+        180,
+        209
+      ],
+      "time": [
+        7.2,
+        8.36
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 13,
+      "frames": [
+        195,
+        224
+      ],
+      "time": [
+        7.8,
+        8.96
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 14,
+      "frames": [
+        210,
+        239
+      ],
+      "time": [
+        8.4,
+        9.56
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 15,
+      "frames": [
+        225,
+        254
+      ],
+      "time": [
+        9.0,
+        10.16
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.933
+    },
+    {
+      "person_id": 0,
+      "window_id": 16,
+      "frames": [
+        240,
+        269
+      ],
+      "time": [
+        9.6,
+        10.76
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.933
+    },
+    {
+      "person_id": 0,
+      "window_id": 17,
+      "frames": [
+        255,
+        284
+      ],
+      "time": [
+        10.2,
+        11.36
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 1,
+      "window_id": 0,
+      "frames": [
+        250,
+        284
+      ],
+      "time": [
+        10.0,
+        11.36
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.9
+    },
+    {
+      "person_id": 0,
+      "window_id": 18,
+      "frames": [
+        270,
+        299
+      ],
+      "time": [
+        10.8,
+        11.96
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 19,
+      "frames": [
+        285,
+        314
+      ],
+      "time": [
+        11.4,
+        12.56
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 20,
+      "frames": [
+        300,
+        329
+      ],
+      "time": [
+        12.0,
+        13.16
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 21,
+      "frames": [
+        315,
+        344
+      ],
+      "time": [
+        12.6,
+        13.76
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 22,
+      "frames": [
+        330,
+        359
+      ],
+      "time": [
+        13.2,
+        14.36
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 23,
+      "frames": [
+        345,
+        374
+      ],
+      "time": [
+        13.8,
+        14.96
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 1,
+      "window_id": 1,
+      "frames": [
+        281,
+        374
+      ],
+      "time": [
+        11.24,
+        14.96
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.867
+    },
+    {
+      "person_id": 0,
+      "window_id": 24,
+      "frames": [
+        360,
+        389
+      ],
+      "time": [
+        14.4,
+        15.56
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 1,
+      "window_id": 2,
+      "frames": [
+        360,
+        389
+      ],
+      "time": [
+        14.4,
+        15.56
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.867
+    },
+    {
+      "person_id": 0,
+      "window_id": 25,
+      "frames": [
+        375,
+        404
+      ],
+      "time": [
+        15.0,
+        16.16
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 1,
+      "window_id": 3,
+      "frames": [
+        375,
+        404
+      ],
+      "time": [
+        15.0,
+        16.16
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.8
+    },
+    {
+      "person_id": 0,
+      "window_id": 26,
+      "frames": [
+        390,
+        419
+      ],
+      "time": [
+        15.6,
+        16.76
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 1,
+      "window_id": 4,
+      "frames": [
+        390,
+        419
+      ],
+      "time": [
+        15.6,
+        16.76
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.933
+    },
+    {
+      "person_id": 0,
+      "window_id": 27,
+      "frames": [
+        405,
+        434
+      ],
+      "time": [
+        16.2,
+        17.36
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 1,
+      "window_id": 5,
+      "frames": [
+        405,
+        434
+      ],
+      "time": [
+        16.2,
+        17.36
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 28,
+      "frames": [
+        420,
+        449
+      ],
+      "time": [
+        16.8,
+        17.96
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 1,
+      "window_id": 6,
+      "frames": [
+        420,
+        449
+      ],
+      "time": [
+        16.8,
+        17.96
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.767
+    },
+    {
+      "person_id": 0,
+      "window_id": 29,
+      "frames": [
+        435,
+        464
+      ],
+      "time": [
+        17.4,
+        18.56
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 1,
+      "window_id": 7,
+      "frames": [
+        435,
+        464
+      ],
+      "time": [
+        17.4,
+        18.56
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.267
+    },
+    {
+      "person_id": 0,
+      "window_id": 30,
+      "frames": [
+        450,
+        479
+      ],
+      "time": [
+        18.0,
+        19.16
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.6
+    },
+    {
+      "person_id": 1,
+      "window_id": 8,
+      "frames": [
+        446,
+        479
+      ],
+      "time": [
+        17.84,
+        19.16
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 31,
+      "frames": [
+        465,
+        494
+      ],
+      "time": [
+        18.6,
+        19.76
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.1
+    },
+    {
+      "person_id": 0,
+      "window_id": 32,
+      "frames": [
+        480,
+        509
+      ],
+      "time": [
+        19.2,
+        20.36
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 33,
+      "frames": [
+        495,
+        524
+      ],
+      "time": [
+        19.8,
+        20.96
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 34,
+      "frames": [
+        510,
+        539
+      ],
+      "time": [
+        20.4,
+        21.56
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 35,
+      "frames": [
+        525,
+        554
+      ],
+      "time": [
+        21.0,
+        22.16
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 36,
+      "frames": [
+        540,
+        569
+      ],
+      "time": [
+        21.6,
+        22.76
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 37,
+      "frames": [
+        555,
+        584
+      ],
+      "time": [
+        22.2,
+        23.36
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 38,
+      "frames": [
+        570,
+        599
+      ],
+      "time": [
+        22.8,
+        23.96
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 39,
+      "frames": [
+        585,
+        614
+      ],
+      "time": [
+        23.4,
+        24.56
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.1
+    },
+    {
+      "person_id": 0,
+      "window_id": 40,
+      "frames": [
+        600,
+        629
+      ],
+      "time": [
+        24.0,
+        25.16
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.1
+    },
+    {
+      "person_id": 0,
+      "window_id": 41,
+      "frames": [
+        615,
+        644
+      ],
+      "time": [
+        24.6,
+        25.76
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 42,
+      "frames": [
+        630,
+        659
+      ],
+      "time": [
+        25.2,
+        26.36
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 43,
+      "frames": [
+        645,
+        674
+      ],
+      "time": [
+        25.8,
+        26.96
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 1,
+      "window_id": 9,
+      "frames": [
+        477,
+        674
+      ],
+      "time": [
+        19.08,
+        26.96
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 44,
+      "frames": [
+        660,
+        689
+      ],
+      "time": [
+        26.4,
+        27.56
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.3
+    },
+    {
+      "person_id": 1,
+      "window_id": 10,
+      "frames": [
+        491,
+        689
+      ],
+      "time": [
+        19.64,
+        27.56
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 45,
+      "frames": [
+        675,
+        704
+      ],
+      "time": [
+        27.0,
+        28.16
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.8
+    },
+    {
+      "person_id": 1,
+      "window_id": 11,
+      "frames": [
+        674,
+        704
+      ],
+      "time": [
+        26.96,
+        28.16
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.067
+    },
+    {
+      "person_id": 0,
+      "window_id": 46,
+      "frames": [
+        690,
+        719
+      ],
+      "time": [
+        27.6,
+        28.76
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 1,
+      "window_id": 12,
+      "frames": [
+        690,
+        719
+      ],
+      "time": [
+        27.6,
+        28.76
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.567
+    },
+    {
+      "person_id": 0,
+      "window_id": 47,
+      "frames": [
+        705,
+        734
+      ],
+      "time": [
+        28.2,
+        29.36
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 1,
+      "window_id": 13,
+      "frames": [
+        705,
+        734
+      ],
+      "time": [
+        28.2,
+        29.36
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 48,
+      "frames": [
+        720,
+        749
+      ],
+      "time": [
+        28.8,
+        29.96
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 1,
+      "window_id": 14,
+      "frames": [
+        720,
+        749
+      ],
+      "time": [
+        28.8,
+        29.96
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 49,
+      "frames": [
+        735,
+        764
+      ],
+      "time": [
+        29.4,
+        30.56
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 1,
+      "window_id": 15,
+      "frames": [
+        735,
+        764
+      ],
+      "time": [
+        29.4,
+        30.56
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 50,
+      "frames": [
+        750,
+        779
+      ],
+      "time": [
+        30.0,
+        31.16
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 1,
+      "window_id": 16,
+      "frames": [
+        745,
+        779
+      ],
+      "time": [
+        29.8,
+        31.16
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.867
+    },
+    {
+      "person_id": 0,
+      "window_id": 51,
+      "frames": [
+        765,
+        794
+      ],
+      "time": [
+        30.6,
+        31.76
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 52,
+      "frames": [
+        780,
+        809
+      ],
+      "time": [
+        31.2,
+        32.36
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 0,
+      "window_id": 53,
+      "frames": [
+        784,
+        813
+      ],
+      "time": [
+        31.36,
+        32.52
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 1.0
+    },
+    {
+      "person_id": 1,
+      "window_id": 17,
+      "frames": [
+        750,
+        813
+      ],
+      "time": [
+        30.0,
+        32.52
+      ],
+      "shape": [
+        30,
+        17,
+        3
+      ],
+      "completeness": 0.733
+    }
+  ]
+}

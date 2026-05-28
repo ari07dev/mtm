@@ -1,0 +1,125 @@
+{
+  "summary": {
+    "total_windows": 0,
+    "total_actions": 11,
+    "unique_codes": [
+      "WALK 8-10 STEPS",
+      "WALK 1-4 STEPS",
+      "WALK 5-7 STEPS"
+    ],
+    "duration_seconds": 15.133333333333333
+  },
+  "actions": [
+    {
+      "person_id": 0,
+      "window_id": 0,
+      "time_start": 0.267,
+      "time_end": 2.633,
+      "mtm_code": "WALK 1-4 STEPS",
+      "raw_action": "rules",
+      "confidence": 0.8,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 1,
+      "time_start": 0.933,
+      "time_end": 3.3,
+      "mtm_code": "WALK 5-7 STEPS",
+      "raw_action": "rules",
+      "confidence": 0.8,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 2,
+      "time_start": 2.767,
+      "time_end": 5.3,
+      "mtm_code": "WALK 8-10 STEPS",
+      "raw_action": "rules",
+      "confidence": 0.8,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 3,
+      "time_start": 3.433,
+      "time_end": 5.967,
+      "mtm_code": "WALK 8-10 STEPS",
+      "raw_action": "rules",
+      "confidence": 0.8,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 4,
+      "time_start": 4.233,
+      "time_end": 6.633,
+      "mtm_code": "WALK 8-10 STEPS",
+      "raw_action": "rules",
+      "confidence": 0.8,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 5,
+      "time_start": 5.567,
+      "time_end": 7.967,
+      "mtm_code": "WALK 5-7 STEPS",
+      "raw_action": "rules",
+      "confidence": 0.8,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 6,
+      "time_start": 6.9,
+      "time_end": 9.3,
+      "mtm_code": "WALK 5-7 STEPS",
+      "raw_action": "rules",
+      "confidence": 0.8,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 7,
+      "time_start": 8.333,
+      "time_end": 10.633,
+      "mtm_code": "WALK 5-7 STEPS",
+      "raw_action": "rules",
+      "confidence": 0.8,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 8,
+      "time_start": 9.767,
+      "time_end": 11.967,
+      "mtm_code": "WALK 8-10 STEPS",
+      "raw_action": "rules",
+      "confidence": 0.8,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 9,
+      "time_start": 10.767,
+      "time_end": 13.3,
+      "mtm_code": "WALK 5-7 STEPS",
+      "raw_action": "rules",
+      "confidence": 0.8,
+      "step_count": 0
+    },
+    {
+      "person_id": 0,
+      "window_id": 10,
+      "time_start": 12.667,
+      "time_end": 15.133,
+      "mtm_code": "WALK 5-7 STEPS",
+      "raw_action": "rules",
+      "confidence": 0.8,
+      "step_count": 0
+    }
+  ],
+  "skeleton_windows": []
+}

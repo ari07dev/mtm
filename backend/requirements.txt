@@ -1,0 +1,33 @@
+# ─── MTM Pipeline Requirements ───────────────────────────────────────────────
+# Core Computer Vision
+ultralytics>=8.2.0          # YOLOv8-Pose
+opencv-python>=4.9.0        # Video I/O, drawing
+numpy>=1.26.0               # Array ops
+
+# Tracking
+supervision>=0.20.0         # ByteTrack wrapper (built on top of ultralytics)
+
+# Deep Learning (for ST-GCN Phase 2)
+torch>=2.2.0
+torchvision>=0.17.0
+
+# Data & Export
+pandas>=2.2.0               # CSV export, dataframes
+scipy>=1.12.0               # Signal smoothing, interpolation
+
+# Config & CLI
+pyyaml>=6.0.1               # YAML config loader
+click>=8.1.7                # CLI interface
+tqdm>=4.66.0                # Progress bars
+rich>=13.7.0                # Pretty terminal output
+
+# Claude API (Phase 4 MTM formatting)
+anthropic>=0.25.0
+
+# Visualization & Debug
+matplotlib>=3.8.0           # Skeleton plots
+Pillow>=10.2.0              # Image utilities
+
+# Optional: Jupyter for exploration
+# jupyter>=1.0.0
+# ipywidgets>=8.1.0

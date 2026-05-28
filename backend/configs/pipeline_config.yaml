@@ -1,0 +1,153 @@
+# ─── MTM Pipeline Configuration ───────────────────────────────────────────────
+# TUNED FOR: Automobile Industry | Single Worker | Moving Camera | Variable Walk
+# Updated: Phase 1 v4
+
+# ── Video Processing ───────────────────────────────────────────────────────────
+video:
+  target_fps: 30
+  resize_width: 640
+  resize_height: 480
+  skip_frames: 0
+  max_frames: 0
+
+# ── YOLOv8-Pose ────────────────────────────────────────────────────────────────
+pose:
+  model: "yolov8m-pose.pt"
+  confidence: 0.45            # Lowered: catches worker even in awkward positions
+  iou_threshold: 0.65
+  device: "auto"
+  max_persons: 1              # AUTOMOBILE: single worker — ignore others
+  keypoint_conf_threshold: 0.4  # Lowered: workers bend/crouch, some joints hidden
+
+# ── ByteTrack ──────────────────────────────────────────────────────────────────
+tracking:
+  enabled: true
+  track_thresh: 0.45
+  track_buffer: 45            # Increased: camera movement can briefly lose worker
+  match_thresh: 0.75
+  min_box_area: 100
+  frame_rate: 30
+
+# ── Skeleton Sequence Builder ──────────────────────────────────────────────────
+skeleton:
+  window_size: 45             # Increased: more frames = more stable classification
+  window_stride: 20           # Stride between windows
+  normalize: true             # CRITICAL for moving camera — body-relative coords
+  interpolate_missing: true
+  smoothing_sigma: 2.0        # Increased: smooth out camera shake noise
+  coordinate_format: "xy"
+  key_joints:
+    hands: [9, 10]
+    feet: [15, 16]
+    hips: [11, 12]
+    shoulders: [5, 6]
+    knees: [13, 14]
+
+# ── Rule-Based MTM Classifier ──────────────────────────────────────────────────
+classifier:
+
+  # WALK detection
+  # MOVING CAMERA FIX: use ankle motion RELATIVE TO HIPS, not absolute.
+  # When camera follows worker, hips also move — so we subtract hip motion
+  # from ankle motion to get true leg movement only.
+  walk:
+    min_ankle_displacement: 0.008   # Much lower: body-relative coords are small
+    stride_window: 20               # Wider window for step counting
+    camera_motion_compensation: true  # Subtract hip velocity from ankle velocity
+    hip_anchor_weight: 0.85         # How much hip motion to subtract (0-1)
+    step_thresholds:
+      "WALK 1-4 STEPS":   [1, 4]
+      "WALK 5-7 STEPS":   [5, 7]
+      "WALK 8-10 STEPS":  [8, 10]
+      "WALK 11-15 STEPS": [11, 15]
+      "WALK 16-30 STEPS": [16, 30]
+
+  # Hand activity detection
+  # AUTOMOBILE: workers use tools, torque wrenches, fit parts — precise motions
+  hands:
+    reach_velocity_threshold: 0.035   # Lowered: automobile work = deliberate moves
+    grasp_proximity_threshold: 0.10   # Wider: parts are large (doors, engines)
+    hold_stillness_threshold: 0.018   # Tighter: holding tools = very still wrists
+    slide_axis_threshold: 0.012       # Lower: catches subtle slide on assembly line
+    tool_use_detection: true          # Wrist rotation pattern = tool use → PT code
+
+  # Temporal smoothing
+  smoothing:
+    min_action_duration_frames: 20    # Prevents flickering between similar codes
+    merge_gap_frames: 10              # Merge same actions within 10 frames
+
+  # PRIMARY WORKER SELECTION
+  # When multiple people detected, always use the largest bounding box
+  # (closest to camera = primary worker)
+  primary_worker:
+    enabled: true
+    selection_method: "largest_bbox"  # Options: largest_bbox, center, track_id
+    min_bbox_area: 0.04               # Min fraction of frame area (ignore tiny people)
+
+# ── MTM Code Mapping ───────────────────────────────────────────────────────────
+mtm_codes:
+  walk_short:       "WALK 1-4 STEPS"
+  walk_medium_low:  "WALK 5-7 STEPS"
+  walk_medium:      "WALK 8-10 STEPS"
+  walk_long:        "WALK 11-15 STEPS"
+  walk_vlong:       "WALK 16-30 STEPS"
+  reach_get:        "GET + HOLD OBJECT"
+  grasp_hold:       "GRASP + HOLD OBJECT"
+  grasp_place:      "GRASP + PLACE OBJECT"
+  hold_put:         "HOLD + PUT OBJECT"
+  hold_slide:       "HOLD + SLIDE OBJECT (M3)"
+  position:         "PT"
+  idle:             "IDLE"
+
+# ── Claude API (Phase 4) ───────────────────────────────────────────────────────
+claude:
+  enabled: false
+  model: "claude-sonnet-4-20250514"
+  max_tokens: 2048
+  system_prompt: |
+    You are an expert Methods-Time Measurement (MTM) analyst specializing
+    in automobile manufacturing. Given raw motion labels from a pose
+    estimation pipeline analyzing an automobile assembly worker, output
+    a clean standardized MTM sequence.
+
+    Industry context:
+    - Worker performs assembly tasks: fitting parts, using torque tools,
+      picking components, walking between stations
+    - Camera follows the worker (moving camera)
+    - Single primary worker
+
+    Valid MTM codes:
+    WALK 1-4 STEPS, WALK 5-7 STEPS, WALK 8-10 STEPS,
+    WALK 11-15 STEPS, WALK 16-30 STEPS,
+    GET + HOLD OBJECT, GRASP + HOLD OBJECT,
+    GRASP + PLACE OBJECT, HOLD + PUT OBJECT,
+    HOLD + SLIDE OBJECT (M3), PT
+
+    Rules:
+    - First line must be TITLE
+    - One code per line, no numbering, no explanations
+    - Remove impossible rapid transitions
+    - Walk codes must appear when worker moves between stations
+    - Do not output IDLE
+
+# ── Output ─────────────────────────────────────────────────────────────────────
+output:
+  directory: "outputs/"
+  save_json: true
+  save_csv: true
+  save_mtm_txt: true
+  save_debug_video: false
+  json_pretty: true
+
+# ── Visualization ──────────────────────────────────────────────────────────────
+visualization:
+  show_skeleton: true
+  show_bbox: true
+  show_keypoint_conf: false   # Off by default — cleaner view
+  show_mtm_label: true
+  show_track_id: true
+  skeleton_color: [245, 158, 11]
+  hand_color: [34, 197, 94]
+  foot_color: [59, 130, 246]
+  font_scale: 0.6
+  line_thickness: 2

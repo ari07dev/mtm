@@ -1,0 +1,99 @@
+# ─── Phase 2: ST-GCN MMAction2 Configuration ─────────────────────────────────
+# Pre-trained model: STGCN on NTU-RGB+D 60 classes
+# Hardware: CPU
+# Industry: Automobile Assembly
+
+# ── Model ─────────────────────────────────────────────────────────────────────
+stgcn:
+  # MMAction2 pre-trained checkpoint (auto-downloaded on first run)
+  config: "stgcn_8xb16-joint-u100-80e_ntu60-xsub-keypoint-2d"
+  checkpoint: "https://download.openmmlab.com/mmaction/v1.0/skeleton/stgcn/stgcn_8xb16-joint-u100-80e_ntu60-xsub-keypoint-2d/stgcn_8xb16-joint-u100-80e_ntu60-xsub-keypoint-2d_20221129-484a394a.pth"
+  device: "cpu"
+  score_threshold: 0.25      # Min confidence to accept ST-GCN prediction
+  top_k: 3                   # Consider top-3 predictions for MTM mapping
+
+# ── NTU-60 Class → MTM Code Mapping ──────────────────────────────────────────
+# NTU RGB+D 60 action classes mapped to MTM codes
+# Full class list: https://rose1.ntu.edu.sg/dataset/actionRecognition/
+#
+# Strategy: map multiple NTU classes to each MTM code.
+# If top-3 ST-GCN predictions contain any mapped class → use that MTM code.
+# Priority order matters (first match wins).
+
+mtm_mapping:
+
+  "WALK 1-4 STEPS":
+    ntu_classes: [9]          # walking
+    min_confidence: 0.20
+
+  "WALK 5-7 STEPS":
+    ntu_classes: [9]          # walking (step count from skeleton builder)
+    min_confidence: 0.20
+
+  "WALK 8-10 STEPS":
+    ntu_classes: [9]          # walking
+    min_confidence: 0.20
+
+  "WALK 11-15 STEPS":
+    ntu_classes: [9, 10]      # walking, running (fast walk)
+    min_confidence: 0.20
+
+  "WALK 16-30 STEPS":
+    ntu_classes: [9, 10]
+    min_confidence: 0.20
+
+  "GET + HOLD OBJECT":
+    ntu_classes: [0, 1, 2, 3, 4, 28, 29]
+    # 0=drink water, 1=eat meal, 2=brush teeth, 3=brush hair, 4=drop
+    # 28=pick up, 29=throw — reaching + grasping pattern
+    min_confidence: 0.20
+
+  "GRASP + HOLD OBJECT":
+    ntu_classes: [28, 4, 24]
+    # 28=pick up, 4=drop (reverse), 24=kicking (leg brace — misuse but works)
+    min_confidence: 0.22
+
+  "GRASP + PLACE OBJECT":
+    ntu_classes: [28, 29, 4]
+    # Reach → hold → release pattern
+    min_confidence: 0.22
+
+  "HOLD + PUT OBJECT":
+    ntu_classes: [4, 29, 1]
+    # 4=drop, 29=throw (controlled), 1=eat (place to surface)
+    min_confidence: 0.20
+
+  "HOLD + SLIDE OBJECT (M3)":
+    ntu_classes: [24, 23, 37]
+    # 24=kicking something, 23=hand waving, 37=wipe face
+    # Horizontal arm sweep pattern
+    min_confidence: 0.25
+
+  "PT":
+    ntu_classes: [28, 0, 5]
+    # Precise placement: slow deliberate reach
+    # Triggered when reach_velocity is very low + high stillness
+    min_confidence: 0.30
+
+# ── Step Count Source ─────────────────────────────────────────────────────────
+# For WALK codes, step count comes from Phase 1 skeleton builder (ankle peaks)
+# ST-GCN only tells us IF walking — skeleton builder tells us HOW MANY steps
+step_count_source: "skeleton_builder"   # "skeleton_builder" or "stgcn"
+
+# ── Fusion Strategy ───────────────────────────────────────────────────────────
+# How to combine Phase 1 (rule-based) + Phase 2 (ST-GCN) predictions
+fusion:
+  method: "weighted_vote"     # Options: stgcn_only, rules_only, weighted_vote
+  stgcn_weight: 0.65          # ST-GCN gets more trust
+  rules_weight: 0.35          # Rule-based classifier as backup
+  # If ST-GCN confidence < fallback_threshold → use rule-based result
+  fallback_threshold: 0.25
+
+# ── CPU Performance ───────────────────────────────────────────────────────────
+cpu:
+  batch_size: 1               # Process one window at a time on CPU
+  num_workers: 2              # Data loading workers
+  # Inference time per window on CPU: ~0.5-2 seconds (varies by machine)
+  # For real-time: use Phase 1 rules only, run ST-GCN async in background
+  async_inference: true       # Run ST-GCN in background thread, don't block
+  async_queue_size: 8         # Max queued windows

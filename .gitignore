@@ -1,0 +1,54 @@
+
+
+# Environment Variables
+.env
+ 
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+ 
+# Virtual Environment
+m/
+ 
+# Jupyter
+.ipynb_checkpoints/
+ 
+# VS Code
+.vscode/
+ 
+# Logs
+*.log
+ 
+# Dataset Files
+datasets/
+data/
+ 
+# Model Weights
+*.pt
+*.pth
+*.onnx
+*.tflite
+ 
+# Numpy Files
+*.npy
+ 
+# Videos
+*.mp4
+*.avi
+*.mov
+backend\input_videos
+ 
+# Images
+*.jpg
+*.jpeg
+*.png
+ 
+# Build Files
+dist/
+build/
+ 
+# OS Files
+.DS_Store
+Thumbs.db
