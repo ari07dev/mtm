@@ -21,6 +21,11 @@ click>=8.1.7                # CLI interface
 tqdm>=4.66.0                # Progress bars
 rich>=13.7.0                # Pretty terminal output
 
+# mmlabs
+pip install -U openmim
+mim install mmengine
+mim install mmcv-lite==2.1.0
+
 # Claude API (Phase 4 MTM formatting)
 anthropic>=0.25.0
 
